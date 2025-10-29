@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Teacher Feedback</title>
+<h1>All Feedback</h1>
+<ul>
+  {% for item in feedbacks %}
+  <li><b>{{item.name}}</b>: {{item.feedback}}</li>
+  {% endfor %}
+</ul>
+<a href="{{ url_for('feedback') }}">Submit Feedback</a>

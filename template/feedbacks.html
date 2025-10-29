@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Submit Feedback</title>
+<h1>Submit Feedback</h1>
+<form method="POST">
+  Name: <input name="name"><br>
+  Feedback: <textarea name="feedback"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+<a href="{{ url_for('home') }}">Back</a>
